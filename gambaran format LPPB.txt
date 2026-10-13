@@ -1,0 +1,47 @@
+1. Kop dan identitas dokumen
+Logo “ASI” di kiri atas.
+Judul di tengah: “ASI Quality Management System – RECORD”.
+Judul dokumen: Laporan Pemeriksaan dan Pengujian Barang/LPPB.
+Blok identitas di kanan:
+Nomor LPPB: ……
+Tanggal LPPB: ……
+Revisi: ……
+2. Blok referensi transaksi
+Tgl Terima: ……
+Nomor PO: ……
+Nomor DO: ……
+Nomor RI: ……
+Proyek: ……
+Vendor: ……
+3. Tabel pemeriksaan dan pengujian
+
+Kolom-kolomnya tetap sama:
+
+Kolom	Isi
+No	Nomor urut
+Kode Material	Kode barang
+Deskripsi Spesifikasi	Uraian barang dan acuan spesifikasi
+Satuan	Misalnya SET, PCS
+Kuantitas PO	Jumlah dipesan
+Kuantitas Penerimaan	Jumlah diterima pada penerimaan ini
+Hasil Pengujian	Dua sub-kolom: Baik dan Tidak Baik
+Sudah Diterima	Akumulasi penerimaan
+Belum Diterima	Sisa PO (Kuantitas PO dikurangi Sudah Diterima)
+
+Setiap barang dicatat per baris. Jika ada jasa pengujian seperti NDT, barisnya dibuat berpasangan dengan barangnya.
+
+4. Keterangan
+
+Satu baris di bawah tabel untuk merujuk nomor RI dan nomor surat jalan, atau catatan lain.
+
+5. Pengesahan
+Teks “Mengetahui”.
+Jabatan penandatangan (kosong, diisi sesuai struktur ASI).
+Ruang tanda tangan dan nama terang.
+6. Footer
+No. Format: ……, Rev. ……, halaman ……
+PT ASAHI SUKSES INDUSTRI
+Kantor: Jalan Simpangan No.18, RT.03/RW.06, Jatireja, Kec. Cikarang Tim., Kabupaten Bekasi, Jawa Barat 17530
+Telepon, email
+
+untuk KOP samakan saja dengan yang sudah dibuat formatnya seperti sebelumnya ya
