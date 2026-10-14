@@ -1,0 +1,13 @@
+Tolong prioritaskan perbaikan alur pelunasan piutang dan hutang.
+
+Saat ini menu Pelunasan Piutang berada di Penjualan dan Pelunasan Hutang berada di Pembelian. Saya ingin keduanya terintegrasi di Kas & Bank.
+
+**Penerimaan:** User memilih customer terlebih dahulu, kemudian sistem otomatis menampilkan invoice penjualan yang masih memiliki saldo piutang. User memilih invoice, memasukkan nilai penerimaan, lalu melakukan posting.
+
+**Pembayaran:** User memilih supplier terlebih dahulu, kemudian sistem menampilkan invoice pembelian yang masih memiliki saldo hutang. User memilih invoice, memasukkan nilai pembayaran, lalu melakukan posting.
+
+Tetap dukung partial payment, multi-invoice, serta pembayaran yang melibatkan PPh 23.
+
+Gunakan kembali backend settlement dan allocation yang sudah ada. Jangan membuat pencatatan piutang/hutang atau jurnal ganda. Penerimaan dan pembayaran umum yang tidak terkait invoice harus tetap berfungsi.
+
+Setelah integrasi selesai, lakukan pengujian jurnal, perubahan outstanding invoice, dan konsistensi buku besar.
