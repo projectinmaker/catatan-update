@@ -1,0 +1,21 @@
+Saya ingin mengembangkan mekanisme Piutang/Hutang Kontrol Sementara sebagai akun penampung transaksi bank yang belum teridentifikasi.
+
+**Aturan AR:**
+- Saat Sales Invoice dibuat, otomatis posting ke akun piutang customer masing-masing, bukan akun kontrol sementara.
+- Saat penerimaan diketahui customer dan invoice-nya, langsung posting ke piutang customer dan alokasikan invoice.
+- Saat penerimaan belum diketahui customer/invoice-nya, masuk ke akun penerimaan sementara.
+- Setelah diketahui, user cukup membuka transaksi penerimaan, memilih customer dan invoice, lalu sistem mereklasifikasi akun sementara dan memperbarui outstanding invoice.
+- Tidak boleh membuat jurnal penerimaan bank ganda.
+
+**Aturan AP:**
+- Purchase Invoice langsung posting ke akun hutang supplier masing-masing.
+- Pembayaran yang sudah jelas supplier dan invoice-nya langsung mengurangi hutang supplier.
+- Pembayaran yang belum teridentifikasi masuk akun pengeluaran sementara.
+- Setelah diketahui, user memilih supplier dan invoice untuk reklasifikasi dan alokasi.
+
+**Kontrol sistem:**
+- Saldo akun sementara harus dapat dipantau dan direkonsiliasi hingga nol.
+- Tampilkan daftar penerimaan/pembayaran belum teridentifikasi.
+- Semua jurnal yang sudah Posted harus memiliki audit trail dan menggunakan reklasifikasi/reversal untuk koreksi.
+- Pastikan tidak ada double posting, outstanding negatif, atau perbedaan antara subledger dan General Ledger.
+- Pisahkan akun suspense dari akun piutang/hutang operasional untuk penyajian neraca yang benar.
